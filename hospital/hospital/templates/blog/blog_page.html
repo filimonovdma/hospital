@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% load wagtailcore_tags %}
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+</head>
+<body>
+<h1>{{ page.body|richtext }}</h1>
+</body>
+</html>

@@ -27,6 +27,7 @@ def search(request):
         search_results = paginator.page(1)
     except EmptyPage:
         search_results = paginator.page(paginator.num_pages)
+# TODO: перенос шаблона в новую папку
 
     return TemplateResponse(request, 'search/search.html', {
         'search_query': search_query,
